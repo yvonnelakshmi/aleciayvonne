@@ -15,10 +15,14 @@
     .body-text {
       font-family: 'Inter', sans-serif;
     }
-    .section-title {
-      font-family: 'Cormorant Infant', serif;
-      font-weight: 500;
-      letter-spacing: 0.1em;
+    .nav-link {
+      padding: 0.4rem 0.9rem;
+      border-radius: 9999px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    .nav-link.active {
+      background-color: #d4af37;
+      color: white !important;
     }
   </style>
 </head>
@@ -27,17 +31,17 @@
   <header class="flex justify-between items-center px-10 py-6">
     <a href="index.html" class="text-2xl font-semibold text-[#b28b1e] tracking-wide">Alecia</a>
     <nav class="flex-1 text-right pr-8 space-x-6 font-semibold text-sm tracking-wide">
-      <a href="her.html" class="bg-gradient-to-r from-[#d4af37] to-[#b28b1e] bg-clip-text text-transparent">HER</a>
-      <a href="meitier.html" class="px-4 py-1 bg-[#b28b1e] text-white rounded-full shadow-sm">MÉITIER</a>
-      <a href="cybersecurity.html" class="bg-gradient-to-r from-[#d4af37] to-[#b28b1e] bg-clip-text text-transparent">CYBERSECURITY</a>
-      <a href="align.html" class="bg-gradient-to-r from-[#d4af37] to-[#b28b1e] bg-clip-text text-transparent">ALIGN</a>
+      <a href="her.html" class="nav-link">HER</a>
+      <a href="meitier.html" class="nav-link active">MÉITIER</a>
+      <a href="cybersecurity.html" class="nav-link">CYBERSECURITY</a>
+      <a href="align.html" class="nav-link">ALIGN</a>
     </nav>
   </header>
 
   <!-- MAIN PANELS -->
   <main class="flex flex-col lg:flex-row justify-center items-start gap-6 px-10 pb-16 max-w-7xl mx-auto">
     <!-- LEFT COLUMN -->
-    <section class="w-full lg:w-1/3 flex flex-col justify-start items-center text-center body-text space-y-4">
+    <section class="w-full lg:w-1/3 bg-white rounded-[20px] shadow-md px-6 py-8 text-center flex flex-col justify-center items-center space-y-4 body-text">
       <h2 class="text-2xl font-bold text-[#004b56] leading-snug tracking-wide">
         EXCLUSIVE.<br>STRATEGIC.<br>LEGACY-DRIVEN.
       </h2>
@@ -62,7 +66,7 @@
     </section>
 
     <!-- RIGHT COLUMN -->
-    <section class="w-full lg:w-1/3 flex flex-col justify-start items-center text-center body-text space-y-4">
+    <section class="w-full lg:w-1/3 bg-white rounded-[20px] shadow-md px-6 py-8 text-center flex flex-col justify-center items-center space-y-4 body-text">
       <h3 class="text-xl font-bold text-[#004b56] tracking-tight">An Astute Advantage™</h3>
       <p class="text-sm text-[#004b56]">
         More than software—MÉITIER® is a financial ecosystem designed for legacy. By blending real-time insights, elite tax strategy, and AI-powered support, we help you transform business income into generational wealth.
@@ -97,3 +101,4 @@
   </footer>
 </body>
 </html>
+
