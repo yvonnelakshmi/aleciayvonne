@@ -1,27 +1,36 @@
-<!-- MÉITIER PAGE: FINALIZED STYLE AND ALIGNMENT -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MÉITIER | Alecia Yvonne</title>
+  <link rel="icon" type="image/png" href="favicon_lotus.png" />
 
-<!-- HEAD FONTS + TAILWIND -->
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@300;500&display=swap&family=Inter:wght@400;500&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
-<script src="https://cdn.tailwindcss.com"></script>
+  <!-- HEAD FONTS + TAILWIND -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@300;500&display=swap&family=Inter:wght@400;500&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
 
-<style>
-  body {
-    background-color: #fdfaf6;
-    font-family: 'Cormorant Infant', serif;
-  }
-  .body-text {
-    font-family: 'Inter', sans-serif;
-  }
-  .nav-link {
-    padding: 0.4rem 0.9rem;
-    border-radius: 9999px;
-    transition: background-color 0.3s, color 0.3s;
-  }
-  .nav-link.active {
-    background-color: #d4af37;
-    color: white !important;
-  }
-</style>
+  <style>
+    body {
+      background-color: #fdfaf6;
+      font-family: 'Cormorant Infant', serif;
+    }
+    .body-text {
+      font-family: 'Inter', sans-serif;
+    }
+    .nav-link {
+      padding: 0.4rem 0.9rem;
+      border-radius: 9999px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    .nav-link.active {
+      background-color: #d4af37;
+      color: white !important;
+    }
+  </style>
+</head>
+
+<body>
 
 <!-- HEADER -->
 <header class="flex justify-between items-center px-10 py-6">
@@ -36,10 +45,10 @@
 
 
 <!-- MÉITIER PANELS -->
-<div class="w-screen h-[calc(100vh-100px)] overflow-x-auto flex snap-x snap-mandatory scroll-smooth">
+<main class="flex flex-col gap-20 px-10 py-12">
 
   <!-- PANEL 1: Value Proposition -->
-  <section class="w-screen h-full snap-start flex flex-col items-center justify-center bg-white text-center px-10">
+  <section class="flex flex-col items-center justify-center bg-white text-center px-10">
     <h2 class="text-[2rem] text-[#004b56] font-semibold mb-2 leading-tight">
       <span class="block">EXCLUSIVE.</span>
       <span class="block">STRATEGIC.</span>
@@ -53,7 +62,7 @@
   </section>
 
   <!-- PANEL 2: Brand Identity + Vision -->
- <section class="w-screen h-full snap-start flex flex-col items-center justify-start bg-[#004b56] text-center px-10 pt-12 rounded-xl mt-6">
+<section class="flex flex-col items-center justify-start bg-[#004b56] text-center px-10 pt-12 rounded-xl mt-6">
     <img src="https://i.imgur.com/bR1evpo.png" alt="Méitier Logo" class="w-72 mx-auto mb-0 rounded-xl shadow-sm" />
     <p class="text-[#fdfaf6] text-base max-w-xl mb-4 font-serif">
       AI-powered platform reshaping how owners build wealth.
@@ -68,7 +77,7 @@
   </section>
 
   <!-- PANEL 3: An Astute Advantage -->
-  <section class="w-screen h-full snap-start flex flex-col items-center justify-center bg-white text-center px-10">
+ <section class="flex flex-col items-center justify-center bg-white text-center px-10">
     <h2 class="text-[2rem] text-[#004b56] font-bold mb-4"><span class="whitespace-nowrap">An Astute Advantage<span class="align-super text-sm">™</span></span></h2>
     <p class="text-[#004b56] text-base font-inter mb-6 max-w-xl mx-auto">
       More than software—MÉITIER® is a financial ecosystem designed for legacy. By blending real-time insights, elite tax strategy, and AI-powered support, we help you transform business income into generational wealth.
@@ -105,4 +114,7 @@
     </div>
   </div>
 </footer>
+
+  </body>
+</html>
 
