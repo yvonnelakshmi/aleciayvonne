@@ -27,79 +27,69 @@ html, body {
 </head>
 <body class="min-h-screen flex flex-col">
   <!-- HEADER -->
-  <header class="flex justify-between items-center px-10 py-6">
-    <a href="index.html" class="text-2xl font-semibold text-[#b28b1e] tracking-wide">Alecia</a>
-    <nav class="flex-1 text-right pr-8 space-x-6 font-semibold text-sm tracking-wide">
-      <a href="her.html" class="px-4 py-1 bg-[#b28b1e] text-white rounded-full shadow-sm">HER</a>
-      <a href="meitier.html" class="bg-gradient-to-r from-[#d4af37] to-[#b28b1e] bg-clip-text text-transparent">MÉITIER</a>
-      <a href="cybersecurity.html" class="bg-gradient-to-r from-[#d4af37] to-[#b28b1e] bg-clip-text text-transparent">CYBERSECURITY</a>
-      <a href="align.html" class="bg-gradient-to-r from-[#d4af37] to-[#b28b1e] bg-clip-text text-transparent">ALIGN</a>
-    </nav>
-  </header>
-
+<header class="flex justify-between items-center px-10 py-6">
+  <a href="index.html" class="text-2xl font-semibold text-[#b28b1e] tracking-wide">Alecia</a>
+  <nav class="flex-1 text-right pr-8 space-x-6 font-semibold text-sm tracking-wide">
+    <a href="her.html" class="bg-gradient-to-r from-[#d4af37] to-[#b28b1e] bg-clip-text text-transparent">HER</a>
+    <a href="meitier.html" class="px-4 py-1 bg-[#b28b1e] text-white rounded-full shadow-sm">MÉITIER</a>
+    <a href="cybersecurity.html" class="bg-gradient-to-r from-[#d4af37] to-[#b28b1e] bg-clip-text text-transparent">CYBERSECURITY</a>
+    <a href="align.html" class="bg-gradient-to-r from-[#d4af37] to-[#b28b1e] bg-clip-text text-transparent">ALIGN</a>
+  </nav>
+</header>
 <!-- MÉITIER PANELS -->
-<main class="flex flex-col gap-20 px-10 py-12">
+<main class="overflow-x-auto flex snap-x snap-mandatory scroll-smooth">
+  <div class="flex w-[300vw]">
+    <!-- PANEL 1 -->
+    <section class="w-screen flex-shrink-0 snap-start bg-white text-center px-6 pt-12 pb-10 rounded-xl shadow-md">
+      <h2 class="text-[2rem] text-[#004b56] font-semibold mb-2 leading-tight">
+        <span class="block">EXCLUSIVE.</span>
+        <span class="block">STRATEGIC.</span>
+        <span class="block">LEGACY-DRIVEN.</span>
+      </h2>
+      <p class="text-[#b28b1e] text-base italic mb-3 font-semibold">Built to protect your profits. Designed to preserve your legacy.</p>
+      <p class="text-[#004b56] text-base font-inter max-w-xl mx-auto mb-4">
+        MÉITIER® empowers business owners to protect more of what they earn and prepare for the future. Through strategic tools, cash flow clarity, and intelligent automation, we help reduce tax exposure and increase long-term financial control.
+      </p>
+      <p class="text-sm italic text-[#b28b1e] font-semibold mb-4">
+        Because building wealth is only half the mission—the rest is keeping it.
+      </p>
+    </section>
 
-  <!-- PANEL 1: Value Proposition -->
- <section class="bg-white text-center px-6 pt-12 pb-10 rounded-xl shadow-md">
-  <h2 class="text-[2rem] text-[#004b56] font-semibold mb-2 leading-tight">
-    <span class="block">EXCLUSIVE.</span>
-    <span class="block">STRATEGIC.</span>
-    <span class="block">LEGACY-DRIVEN.</span>
-  </h2>
-  <p class="text-[#b28b1e] text-base italic mb-3 font-semibold">Built to protect your profits. Designed to preserve your legacy.</p>
-  <p class="text-[#004b56] text-base font-inter max-w-xl mx-auto mb-4">
-    MÉITIER® empowers business owners...
-  </p>
-  <p class="text-sm italic text-[#b28b1e] font-semibold mb-4">
-    Because building wealth is only half the mission—the rest is keeping it.
-  </p>
-</section>
+    <!-- PANEL 2 -->
+    <section class="w-screen flex-shrink-0 snap-start bg-[#004b56] text-white text-center px-6 pt-12 pb-10 rounded-xl shadow-md">
+      <img src="https://i.imgur.com/bR1evpo.png" alt="Méitier Logo" class="w-72 mx-auto mb-6 rounded-xl shadow-sm" />
+      <p class="text-base max-w-xl mx-auto font-serif mb-2">
+        AI-powered platform reshaping how owners build wealth.
+      </p>
+      <p class="text-[#b28b1e] text-base font-semibold mt-2 font-serif">
+        Your Financial Future, Redefined.
+      </p>
+      <p class="text-[#b28b1e] text-base uppercase tracking-widest mt-6 font-bold">Coming Soon</p>
+      <a href="#" class="mt-5 inline-block border border-[#004b56] text-[#004b56] text-sm font-bold tracking-wide px-6 py-3 rounded-full bg-white hover:bg-[#004b56] hover:text-white transition duration-300 shadow-md hover:shadow-lg">
+        Join the Waitlist
+      </a>
+    </section>
 
-  <!-- PANEL 2: Brand Identity + Vision -->
-<section class="bg-[#004b56] text-white text-center px-6 pt-12 pb-10 rounded-xl shadow-md">
-  <img src="https://i.imgur.com/bR1evpo.png" alt="Méitier Logo" class="w-72 mx-auto mb-6 rounded-xl shadow-sm" />
-
-  <p class="text-base max-w-xl mx-auto font-serif mb-2">
-    AI-powered platform reshaping how owners build wealth.
-  </p>
-
-  <p class="text-[#b28b1e] text-base font-semibold mt-2 font-serif">
-    Your Financial Future, Redefined.
-  </p>
-
-  <p class="text-[#b28b1e] text-base uppercase tracking-widest mt-6 font-bold">
-    Coming Soon
-  </p>
-
-  <a href="#" role="button" aria-label="Join the Waitlist"
-     class="mt-5 inline-block border border-[#004b56] text-[#004b56] text-sm font-bold tracking-wide px-6 py-3 rounded-full bg-white hover:bg-[#004b56] hover:text-white transition duration-300 shadow-md hover:shadow-lg">
-    Join the Waitlist
-  </a>
-</section>
-
-  <!-- PANEL 3: An Astute Advantage -->
-<section class="bg-white text-center px-6 pt-12 pb-10 rounded-xl shadow-md">
-  <h2 class="text-[2rem] text-[#004b56] font-bold mb-4">
-    <span class="whitespace-nowrap">An Astute Advantage<span class="align-super text-sm">™</span></span>
-  </h2>
-
-  <p class="text-[#004b56] text-base font-inter mb-6 max-w-xl mx-auto">
-    More than software—MÉITIER® is a financial ecosystem designed for legacy. By blending real-time insights, elite tax strategy, and AI-powered support, we help you transform business income into generational wealth.
-  </p>
-
-  <p class="text-[#004b56] text-base font-inter mb-6 max-w-xl mx-auto">
-    <strong class="text-[#b28b1e] font-semibold tracking-wide">SAVI</strong>, your intelligent financial guide, responds in real time—flagging risks, revealing opportunities, and simplifying what others overcomplicate.
-  </p>
-
-  <p class="text-[#004b56] text-base italic font-medium mb-8 font-inter max-w-xl mx-auto">
-    <span class="text-[#b28b1e] font-semibold tracking-wide">This is where intelligence meets intention.</span>
-  </p>
-
-  <p class="text-[#004b56] text-sm italic mt-4 font-inter">
-    Explore the full MÉITIER experience or <a href="#" class="underline text-[#b28b1e] hover:text-[#99731a]">join the waitlist</a> today.
-  </p>
-</section>
+    <!-- PANEL 3 -->
+    <section class="w-screen flex-shrink-0 snap-start bg-white text-center px-6 pt-12 pb-10 rounded-xl shadow-md">
+      <h2 class="text-[2rem] text-[#004b56] font-bold mb-4">
+        <span class="whitespace-nowrap">An Astute Advantage<span class="align-super text-sm">™</span></span>
+      </h2>
+      <p class="text-[#004b56] text-base font-inter mb-6 max-w-xl mx-auto">
+        More than software—MÉITIER® is a financial ecosystem designed for legacy...
+      </p>
+      <p class="text-[#004b56] text-base font-inter mb-6 max-w-xl mx-auto">
+        <strong class="text-[#b28b1e] font-semibold tracking-wide">SAVI</strong>, your intelligent financial guide, responds in real time...
+      </p>
+      <p class="text-[#004b56] text-base italic font-medium mb-8 font-inter max-w-xl mx-auto">
+        <span class="text-[#b28b1e] font-semibold tracking-wide">This is where intelligence meets intention.</span>
+      </p>
+      <p class="text-[#004b56] text-sm italic mt-4 font-inter">
+        Explore the full MÉITIER experience or <a href="#" class="underline text-[#b28b1e] hover:text-[#99731a]">join the waitlist</a> today.
+      </p>
+    </section>
+  </div>
+</main>
 
 <!-- FOOTER -->
 <footer class="bg-[#fdfaf6] text-[#b28b1e] text-sm font-light py-2 px-6 mt-2 border-t border-[#e8e1d8]">
