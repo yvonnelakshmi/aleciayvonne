@@ -1,0 +1,111 @@
+<!-- CODEPEN SETTINGS: HTML > Stuff for <head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="shortcut icon" href="favicon.ico">
+ -->
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@300;500&display=swap&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link rel="icon" type="image/png" href="favicon_lotus.png" />
+<style>
+  body {
+    background-color: #fdfaf6;
+    font-family: 'Cormorant Infant', serif;
+  }
+
+  .body-text {
+    font-family: 'Inter', sans-serif;
+  }
+
+  .section-title {
+    font-family: 'Cormorant Infant', serif;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+  }
+
+  @keyframes bounce-smooth {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+  }
+
+  .hover\:bounce:hover {
+    animation: bounce-smooth 0.6s ease-in-out;
+  }
+</style>
+
+<!-- HEADER -->
+<header class="flex justify-between items-center px-10 py-6">
+  <h1><a href="index.html" class="text-2xl font-semibold text-[#b28b1e] tracking-wide">Alecia</a></h1>
+  <nav class="flex-1 text-right pr-8 space-x-4 font-semibold text-sm tracking-wide">
+    <a href="her.html" class="bg-gradient-to-r from-[#d4af37] to-[#b28b1e] bg-clip-text text-transparent">HER</a>
+    <a href="meitier.html" class="bg-gradient-to-r from-[#d4af37] to-[#b28b1e] bg-clip-text text-transparent">MÉITIER</a>
+    <a href="cybersecurity.html" class="bg-gradient-to-r from-[#d4af37] to-[#b28b1e] bg-clip-text text-transparent">CYBERSECURITY</a>
+    <a href="align.html" class="bg-[#b28b1e] text-white px-4 py-1 rounded-full shadow-sm">ALIGN</a>
+  </nav>
+</header>
+
+
+<!-- ALIGN SECTION -->
+<section class="px-10 pt-10 pb-32 max-w-7xl mx-auto">
+  <div class="flex flex-col md:flex-row items-start md:items-center gap-12">
+    
+    <!-- LEFT TEXT COLUMN -->
+    <div class="flex-1">
+      <h5 class="uppercase tracking-widest text-2xl text-[#b28b1e] mb-8 text-left -ml-10">
+        Let's Build the Future Together
+      </h5>
+
+      <h2 class="text-[80px] leading-[1.1] text-[#004b56] font-medium mb-6">
+        Let’s Connect.<br />
+        Create.<br />
+        Collaborate.
+      </h2>
+
+      <p class="body-text text-base text-[#004b56] mb-10 max-w-md">
+        I’m always open to conversations about tech, business, and the future of innovation. Whether you’re a brand, investor, or fellow entrepreneur—let’s connect and shape what’s next
+      </p>
+
+      <!-- SOCIAL ICONS FIXED -->
+      <div class="flex justify-end space-x-6 mt-8">
+        <a href="https://www.linkedin.com/in/aleciayvonne/" target="_blank" aria-label="LinkedIn">
+          <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" class="w-10 h-10 hover:bounce transition-transform duration-300" />
+        </a>
+        <a href="https://www.instagram.com/yvonnelakshmi" target="_blank" aria-label="Instagram">
+          <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" class="w-10 h-10 hover:bounce transition-transform duration-300" />
+        </a>
+      </div>
+    </div>
+
+    <!-- RIGHT SIDE: FORM -->
+    <div class="flex-1 flex flex-col items-center">
+      
+<!-- Styled Contact Card -->
+<form action="https://formspree.io/f/xblylvvv" method="POST" class="w-full bg-white rounded-[24px] shadow-xl p-8 space-y-4 max-w-md">
+  <input type="text" name="name" placeholder="Name" required class="w-full border border-[#004b56] rounded-md px-4 py-3 text-[#004b56] body-text placeholder:text-gray-400" />
+  <input type="email" name="email" placeholder="Email" required class="w-full border border-[#004b56] rounded-md px-4 py-3 text-[#004b56] body-text placeholder:text-gray-400" />
+  <textarea name="message" placeholder="Message" rows="4" required class="w-full border border-[#004b56] rounded-md px-4 py-3 text-[#004b56] body-text placeholder:text-gray-400"></textarea>
+  <div class="flex justify-center mt-4">
+    <button type="submit" class="bg-[#004b56] text-white px-6 py-2 rounded-lg mt-4 hover:bg-[#00343d] transition">Submit</button>
+  </div>
+</form>
+
+    </div>
+  </div>
+</section>
+<!-- FOOTER -->
+<footer class="bg-[#fdfaf6] text-[#b28b1e] text-sm font-light py-4 px-6 mt-2 border-t border-[#e8e1d8]">
+  <div class="max-w-7xl mx-auto text-center flex flex-col items-center space-y-2">
+    <span class="font-cormorant">© 2025 Alecia Yvonne · All Rights Reserved</span>
+    
+  </div>
+</footer>
+
