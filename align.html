@@ -89,8 +89,7 @@
     <div class="flex-1 flex flex-col items-center">
       
 <!-- Styled Contact Card -->
-<form action="https://formspree.io/f/xblylvvv" method="POST" class="w-full bg-white rounded-[24px] shadow-xl p-8 space-y-4 max-w-md">
-  <input type="hidden" name="_redirect" value="thankyou.html">
+<form onsubmit="handleSubmit(event)" class="w-full bg-white rounded-[24px] shadow-xl p-8 space-y-4 max-w-md">
   <input type="text" name="name" placeholder="Name" required class="w-full border border-[#004b56] rounded-md px-4 py-3 text-[#004b56] body-text placeholder:text-gray-400" />
   <input type="email" name="email" placeholder="Email" required class="w-full border border-[#004b56] rounded-md px-4 py-3 text-[#004b56] body-text placeholder:text-gray-400" />
   <textarea name="message" placeholder="Message" rows="4" required class="w-full border border-[#004b56] rounded-md px-4 py-3 text-[#004b56] body-text placeholder:text-gray-400"></textarea>
@@ -109,4 +108,25 @@
     
   </div>
 </footer>
+<script>
+  async function handleSubmit(event) {
+    event.preventDefault();
+    const form = event.target;
+    const data = new FormData(form);
+
+    const response = await fetch("https://formspree.io/f/xblylvvv", {
+      method: "POST",
+      body: data,
+      headers: {
+        'Accept': 'application/json'
+      }
+    });
+
+    if (response.ok) {
+      window.location.href = "thankyou.html";
+    } else {
+      alert("There was a problem submitting the form.");
+    }
+  }
+</script>
 
