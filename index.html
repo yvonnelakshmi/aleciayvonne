@@ -1,5 +1,6 @@
-
-<!-- CODEPEN SETTINGS: HTML > Stuff for <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
 
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,47 +9,41 @@
   
   
   
- -->
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@300;500&display=swap&family=Inter:wght@400;500&display=swap" rel="stylesheet">
-<link rel="icon" type="image/png" href="favicon-512x512-new.png" />
-<script src="https://cdn.tailwindcss.com"></script>
 
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HER | Alecia Yvonne</title>
+  <link rel="icon" type="image/png" href="favicon-512x512-new.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@300;500&display=swap&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 
-<style>
-  body {
-    background-color: #fdfaf6;
-    font-family: 'Cormorant Infant', serif;
-  }
-
-  .bg-gold-gradient {
-    background: linear-gradient(to right, #d4af37, #b28b1e);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-
-  .body-text {
-    font-family: 'Inter', sans-serif;
-  }
-
-  .fade-image {
-    box-shadow: 0 0 80px 30px #fdfaf6;
-    border-radius: 24px;
-  }
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background-color: #fdfaf6;
+      font-family: 'Cormorant Infant', serif;
+    }
+    .body-text {
+      font-family: 'Inter', sans-serif;
+    }
+    .section-title {
+      font-family: 'Cormorant Infant', serif;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+    }
+    html, body { overflow-x: hidden; }
 </style>
-
+</head>
 <body class="min-h-screen flex flex-col justify-between">
-  <div class="flex-1">
-    <!-- HEADER -->
-    <header class="flex justify-between items-center px-10 py-6">
-      <h1 class="text-4xl font-bold bg-gold-gradient">Alecia</h1>
-      <nav class="flex-1 text-right pr-8 space-x-4 font-semibold text-sm tracking-wide">
-        <a href="index.html" class="bg-[#b28b1e] text-white px-4 py-1 rounded-full shadow-sm">HOME</a>
-        <a href="her.html" class="bg-gold-gradient">HER</a>
-        <a href="meitier.html" class="bg-gold-gradient">MÉITIER</a>
-        <a href="cybersecurity.html" class="bg-gold-gradient">CYBERSECURITY</a>
-        <a href="align.html" class="bg-gold-gradient">ALIGN</a>
-      </nav>
-    </header>
+  <!-- HEADER -->
+  <header class="flex justify-between items-center px-10 py-6">
+    <a href="index.html" class="text-2xl font-semibold text-[#b28b1e] tracking-wide">Alecia</a>
+    <nav class="flex-1 text-right pr-8 space-x-6 font-semibold text-sm tracking-wide">
+      <a href="her.html" class="px-4 py-1 bg-[#b28b1e] text-white rounded-full shadow-sm">HER</a>
+      <a href="meitier.html" class="bg-gradient-to-r from-[#d4af37] to-[#b28b1e] bg-clip-text text-transparent">MÉITIER</a>
+      <a href="cybersecurity.html" class="bg-gradient-to-r from-[#d4af37] to-[#b28b1e] bg-clip-text text-transparent">CYBERSECURITY</a>
+      <a href="align.html" class="bg-gradient-to-r from-[#d4af37] to-[#b28b1e] bg-clip-text text-transparent">ALIGN</a>
+    </nav>
+  </header>
 
     <!-- HERO SECTION -->
     <section class="flex flex-col lg:flex-row justify-between items-center px-10 pt-6 pb-4 gap-14">
